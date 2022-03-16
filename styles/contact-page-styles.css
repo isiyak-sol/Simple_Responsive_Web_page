@@ -1,0 +1,82 @@
+section#contact-details {
+	min-height: 80vh;
+	background-image: linear-gradient(to right, rgba(4,6,30,0.75), 
+					rgba(4,6,30,0.75)), url(../Assets/contact-background.jpg); 
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section#contact-details #contact-page-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+section#contact-details #contact-page-container #c-col-1 {
+	flex-basis: 30%;
+	margin: 15% 0;
+	padding: 0;
+	text-align: center;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+section#contact-details #contact-page-container #c-col-2 {
+	flex-basis: 55%;
+	margin: 15% 0;
+	padding: 20px 0;
+	text-align: center;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+section#contact-details #contact-page-container #c-col-1 img {
+	max-width: 100%;
+}
+
+section#contact-details #contact-page-container #c-col-2 h1 {
+	margin-bottom: 10px;
+}
+
+section#contact-details #contact-page-container #c-col-2 h3 {
+	margin-bottom: 10px;
+	border-bottom: 2px solid rgb(255,0,0);
+}
+
+section#contact-details #contact-page-container #c-col-2 #contact-details-info-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+
+section#contact-details #contact-page-container #c-col-2 #contact-details-info-container img {
+	width: 30px;
+	margin: auto;
+	display: block;
+}
+
+section#contact-details #contact-page-container #c-col-2 #contact-details-info-container p {
+	text-align: center;
+	margin: 8px 0;
+	font-weight: bold;
+}
+
+section#contact-details #contact-page-container #c-col-2 h2 {
+	font-size: 18px;
+	margin: 20px 0 10px;
+}
+
+section#contact-details #contact-page-container #c-col-2 #contact-details-info .social-media {
+    text-align: center;
+}
+
+section#contact-details #contact-page-container #c-col-2 #contact-details-info .social-media  a {
+	padding: 0 5px;
+}
+
+section#contact-details #contact-page-container #c-col-2 #contact-details-info .social-media img {
+	width: 30px;
+}

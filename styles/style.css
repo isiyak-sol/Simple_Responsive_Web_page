@@ -1,0 +1,427 @@
+* {
+	font-family: 'Arial';
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+.container {
+	width: 85%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+	background-color: #262626;
+	min-height: 50px;
+	border-bottom: 2px solid rgb(255,0,0);
+	padding: 30px 0;
+}
+
+header #my-logo h1 {
+	color: #fff;
+	cursor: pointer;
+}
+
+header #my-logo span {
+	color: rgb(255,0,0);
+}
+
+header .logo-and-nav-contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*.....................Navigation  Bar.....................*/
+header nav {
+	display: flex;
+	padding: 15px 0 0;
+}
+
+header nav ul li {
+	list-style-type: none;
+	margin: 0 15px;
+	cursor: pointer;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+header nav ul li a.active {
+	color: rgb(255,0,0);
+}
+
+header nav ul li::after {
+	content: '';
+	width: 0;
+	background-color: #fff;
+	height: 1px;
+	margin: auto;
+	display: block;
+	transition: 0.5s;
+}
+
+header nav ul li:hover::after {
+	width: 100%;
+}
+
+/*........................Showcase Area..................*/
+section#showcase {
+	min-height: 80vh;
+	background-image: linear-gradient(to right, rgba(4,6,30,0.75), 
+					rgba(4,6,30,0.75)), url(../Assets/showcase.jpg); 
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+section#showcase #showcase-contents {
+	display: flex;
+	justify-content: space-between;
+	padding: 15% 0;
+	color: #fff;
+}
+
+section#showcase #showcase-contents #well-come-message {
+	flex-basis: 60%;
+}
+
+section#showcase #showcase-contents #well-come-message h1 {
+	font-size: 50px;
+	margin: 10px auto;
+}
+
+section#showcase #showcase-contents #well-come-message p {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+section#showcase #showcase-contents #well-come-message button#home-btn {
+	padding: 8px 20px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	background-color: rgb(255,0,0);
+	border-radius: 5px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+section#showcase #showcase-contents #well-come-message button#home-btn:hover {
+	opacity: 0.8;
+}
+
+/*.......................Home Forms..................*/
+section#showcase #showcase-contents #contact-form {
+	flex-basis: 30%;
+}
+
+section#showcase #showcase-contents #contact-form form input {
+	width: 100%;
+	padding: 10px 20px;
+	background: transparent;
+	color: #fff;
+	font-size: 17px;
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgb(255,255,255);
+	transition: 0.5s;
+}
+
+section#showcase #showcase-contents #contact-form form input:not(:last-child){
+	margin-bottom: 15px;
+}
+
+section#showcase #showcase-contents #contact-form form input[type='text']:focus,
+section#showcase #showcase-contents #contact-form form input[type='email']:focus {
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgb(255,0,0);
+}
+
+section#showcase #showcase-contents #contact-form form textarea {
+	width: 100%;
+	height: 100px;
+	background: transparent;
+	padding: 10px;
+	font-size: 17px;
+	color: #fff;
+	resize: none;
+	border: 1px solid rgb(255,255,255);
+	outline: none;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	transition: 0.5s;
+}
+
+section#showcase #showcase-contents #contact-form form textarea:focus {
+	border: 1px solid rgb(255,0,0);
+}
+
+section#showcase #showcase-contents #contact-form form button#submit-btn {
+	display: block;
+	width: 100%;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	background-color: rgb(255,0,0);
+	border-radius: 5px;
+	color: #fff;
+	transition: 0.5s;
+	margin-bottom: 10px;
+}
+
+section#showcase #showcase-contents #contact-form form button#submit-btn:hover {
+	opacity: 0.8;
+}
+
+section#showcase #showcase-contents #contact-form form h2 {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+section#showcase #showcase-contents #contact-form form .social-media {
+    text-align: center;
+}
+
+section#showcase #showcase-contents #contact-form form .social-media  a {
+	padding: 0 5px;
+}
+
+section#showcase #showcase-contents #contact-form form .social-media img {
+	width: 30px;
+}
+
+/*.............................About Section..................*/
+section#about-section {
+	min-height: 85vh;
+}
+
+section#about-section .about-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 120px 0;
+}
+ section#about-section .about-container #about-aside-photo {
+  	flex-basis: 15%;
+  }
+
+ section#about-section .about-container #about-aside-photo img {
+ 	width: 100%;
+ }
+
+section#about-section .about-container #about-section-general-content {
+	flex-basis: 75%;
+	text-align: right;
+}
+
+section#about-section .about-container #about-section-general-content h1 {
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+section#about-section .about-container #about-section-general-content p {
+	font-size: 20px;
+}
+
+/*......................Some works Section...............*/
+section#some-works {
+	background-color: #ffffe6;
+	padding-bottom: 30px;
+	min-height: 85vh;
+}
+
+section#some-works #works-header {
+	margin: 60px 0 45px;
+}
+
+section#some-works #works-header h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+section#some-works #works-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+
+section#some-works #works-container div#w-col {
+	flex-basis: 30%;
+	height: auto;
+    text-align: center;
+    margin: 10px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+section#some-works #works-container div#w-col  p {
+	padding: 10px;
+	font-size: 14px;
+}
+
+section#some-works #works-container div#w-col img {
+	width: 100%;
+}
+
+section#some-works #works-container div#w-col #img-caption {
+	display: flex;
+	justify-content: space-around;
+}
+
+section#some-works #works-container div#w-col #img-caption button#w-btn,
+section#some-works div#button-container button.see-more-btn {
+	padding: 8px 20px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	background-color: rgb(255,0,0); 
+	border-radius: 5px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+section#some-works #works-container div#w-col #img-caption button#w-btn:hover,
+section#some-works div#button-container button.see-more-btn:hover {
+	opacity: 0.65;
+}
+
+section#some-works div#button-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+section#some-works div#button-container button.see-more-btn {
+	background-color: #000;
+	border-radius: 25px;
+}
+
+
+/*.....................Paggination styles.................*/
+.paggination-content {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.paggination-content ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.paggination-content ul li {
+	display: inline-block;	
+}
+
+.paggination-content ul li a {	
+	text-decoration: none;
+	padding: 8px 16px;
+	color: #000;
+	font-size: 18px;
+	float: left;
+	transition: background-color 0.3s;
+	border-radius: 100%;
+	border: 1px solid #777;
+}
+
+.paggination-content ul li a.active {
+	background-color: #000;
+	color: #fff;
+}
+
+.paggination-content ul li a:hover:not(.active) {
+	background-color: #cccccc;
+}
+
+/*......................Footer Section..................*/
+footer {
+	background-color: #262626;
+	color: #fff;
+	padding: 30px 0;
+}
+
+footer #footer-container {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 15px;
+}
+
+footer #footer-container p {
+	font-size: 17px;
+}
+
+footer #footer-container .social-media {
+    text-align: center;
+}
+
+footer #footer-container .footer-social-media a {
+	padding: 0 5px;
+}
+
+footer #footer-container .footer-social-media img {
+	width: 50px;
+}
+
+footer #footer-container #col-1 {
+	flex-basis: 35%;
+}
+
+footer #footer-container #col-2 {
+	flex-basis: 50%;
+}
+
+footer #footer-container #col-3 {
+	flex-basis: 35%;
+}
+
+footer #footer-container #col-3 h2 {
+	margin-bottom: 10px;
+}
+
+footer #footer-container #col-2 a {
+	font-weight: bold;
+	color: #3333ff;
+}
